@@ -1,29 +1,29 @@
 package org.rainzha.dmmf.domain.discriminated;
 
+import java.util.function.Supplier;
+
 /**
  * F# 区分联合类型：type SendResult = | Sent | NotSent
  * 邮件发送结果枚举式代数类型
  */
 public sealed interface SendResult permits SendResult.Sent, SendResult.NotSent {
 
-    // 模式匹配统一接口
-    <T> T match(Runnable sentCase, Runnable notSentCase);
+    // 修复：使用Supplier<T>，分支可以返回任意类型
+    <T> T match(Supplier<T> sentCase, Supplier<T> notSentCase);
 
     // 成功分支
     record Sent() implements SendResult {
         @Override
-        public <T> T match(Runnable sentCase, Runnable notSentCase) {
-            sentCase.run();
-            return null;
+        public <T> T match(Supplier<T> sentCase, Supplier<T> notSentCase) {
+            return sentCase.get();
         }
     }
 
     // 失败分支
     record NotSent() implements SendResult {
         @Override
-        public <T> T match(Runnable sentCase, Runnable notSentCase) {
-            notSentCase.run();
-            return null;
+        public <T> T match(Supplier<T> sentCase, Supplier<T> notSentCase) {
+            return notSentCase.get();
         }
     }
 
