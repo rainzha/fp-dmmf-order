@@ -1,4 +1,4 @@
-package org.rainzha.dmmf.domain.port;
+package org.rainzha.dmmf.domain.port.outbound;
 
 import org.rainzha.dmmf.app.dto.UnvalidatedAddress;
 import org.rainzha.dmmf.domain.port.model.CheckedAddress;

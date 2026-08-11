@@ -1,6 +1,8 @@
-package org.rainzha.dmmf.domain.port;
+package org.rainzha.dmmf.domain.port.inbound;
 
 import org.rainzha.dmmf.app.dto.UnvalidatedOrder;
+import org.rainzha.dmmf.domain.port.outbound.CheckAddressExists;
+import org.rainzha.dmmf.domain.port.outbound.CheckProductCodeExists;
 import org.rainzha.dmmf.domain.records.ValidatedOrder;
 
 /**

@@ -1,9 +1,9 @@
 package org.rainzha.dmmf.app.mapper;
 
 import org.rainzha.dmmf.app.dto.UnvalidatedOrder;
-import org.rainzha.dmmf.domain.port.CheckAddressExists;
-import org.rainzha.dmmf.domain.port.CheckProductCodeExists;
-import org.rainzha.dmmf.domain.port.ValidateOrder;
+import org.rainzha.dmmf.domain.port.outbound.CheckAddressExists;
+import org.rainzha.dmmf.domain.port.outbound.CheckProductCodeExists;
+import org.rainzha.dmmf.domain.port.inbound.ValidateOrder;
 import org.rainzha.dmmf.domain.records.Address;
 import org.rainzha.dmmf.domain.records.CustomerInfo;
 import org.rainzha.dmmf.domain.records.ValidatedOrder;

@@ -1,7 +1,7 @@
 package org.rainzha.dmmf.app.mapper;
 
 import org.rainzha.dmmf.domain.discriminated.ProductCode;
-import org.rainzha.dmmf.domain.port.CheckProductCodeExists;
+import org.rainzha.dmmf.domain.port.outbound.CheckProductCodeExists;
 
 /**
  * 映射函数 toProductCode：原始字符串商品编码 → 领域ProductCode

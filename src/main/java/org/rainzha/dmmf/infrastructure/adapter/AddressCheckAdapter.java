@@ -1,7 +1,7 @@
 package org.rainzha.dmmf.infrastructure.adapter;
 
 import org.rainzha.dmmf.app.dto.UnvalidatedAddress;
-import org.rainzha.dmmf.domain.port.CheckAddressExists;
+import org.rainzha.dmmf.domain.port.outbound.CheckAddressExists;
 import org.rainzha.dmmf.domain.port.model.CheckedAddress;
 import org.rainzha.dmmf.domain.port.model.CheckedAddressData;
 

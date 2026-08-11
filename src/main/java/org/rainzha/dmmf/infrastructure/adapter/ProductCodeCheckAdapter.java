@@ -1,7 +1,7 @@
 package org.rainzha.dmmf.infrastructure.adapter;
 
 import org.rainzha.dmmf.domain.discriminated.ProductCode;
-import org.rainzha.dmmf.domain.port.CheckProductCodeExists;
+import org.rainzha.dmmf.domain.port.outbound.CheckProductCodeExists;
 import org.rainzha.dmmf.domain.valueobj.String50;
 
 /**
