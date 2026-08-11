@@ -1,4 +1,4 @@
-package org.rainzha.dmmf.app.mapper;
+package org.rainzha.dmmf.domain.service;
 
 import org.rainzha.dmmf.domain.discriminated.OptionResult;
 import org.rainzha.dmmf.domain.discriminated.SendResult;
@@ -12,7 +12,7 @@ import org.rainzha.dmmf.domain.records.PricedOrder;
 /**
  * 完整复刻 F# acknowledgeOrder 工作流逻辑
  */
-public class AcknowledgeOrderWorkflowMapper implements AcknowledgeOrder {
+public class AcknowledgeOrderWorkflow implements AcknowledgeOrder {
 
     @Override
     public OptionResult<OrderAcknowledgmentSent> acknowledge(
